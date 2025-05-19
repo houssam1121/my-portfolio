@@ -1,0 +1,174 @@
+/* Contact.css */
+
+.contact {
+  padding: 8rem 2rem;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contact h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.contact h2::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: white;
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon svg {
+  width: 60%;
+  height: 60%;
+}
+
+.linkedin .social-icon {
+  background-color: rgba(10, 102, 194, 0.2);
+  color: #0a66c2;
+}
+
+.github .social-icon {
+  background-color: rgba(51, 51, 51, 0.2);
+  color: #333;
+}
+
+.whatsapp .social-icon {
+  background-color: rgba(37, 211, 102, 0.2);
+  color: #25D366;
+}
+
+.email .social-icon {
+  background-color: rgba(212, 70, 56, 0.2);
+  color: #D44638;
+}
+
+.social-card span {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+/* Hover effects */
+.linkedin:hover .social-icon {
+  background-color: #0a66c2;
+  color: white;
+}
+
+.github:hover .social-icon {
+  background-color: #333;
+  color: white;
+}
+
+.whatsapp:hover .social-icon {
+  background-color: #25D366;
+  color: white;
+}
+
+.email:hover .social-icon {
+  background-color: #D44638;
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact {
+    padding: 6rem 1.5rem;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+  }
+  
+  .social-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact h2 {
+    font-size: 2rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
+  .social-grid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
+  
+  .social-card {
+    padding: 1rem;
+  }
+  
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+  
+  .social-card span {
+    font-size: 1rem;
+  }
+}
