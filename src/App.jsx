@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Header />
-      <HeroSection />
+      
       <About />
       <Projects />
       <Contact />
