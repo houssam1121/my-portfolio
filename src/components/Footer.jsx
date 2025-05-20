@@ -30,7 +30,7 @@ function Footer() {
         <a href="#about" className="footer-link">About</a>
         <a href="#projects" className="footer-link">Projects</a>
         <a href="#contact" className="footer-link">Contact</a>
-        <a href="/blog" className="footer-link">Blog</a>
+     
       </div>
 
       <div className="social-links">
