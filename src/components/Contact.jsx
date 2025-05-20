@@ -11,7 +11,7 @@ function Contact() {
         <div className="social-grid">
           {/* LinkedIn */}
           <a 
-            href="https://linkedin.com/in/yourprofile" 
+            href="https://www.linkedin.com/in/houssam-masri-7b4b29269/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-card linkedin"
@@ -25,7 +25,7 @@ function Contact() {
 
           {/* GitHub */}
           <a 
-            href="https://github.com/yourusername" 
+            href="https://github.com/houssam1121" 
             target="_blank" 
             rel="noopener noreferrer"
             className="social-card github"
@@ -53,7 +53,7 @@ function Contact() {
 
           {/* Email */}
           <a 
-            href="mailto:example@gmail.com" 
+            href="mailto:houssammasri102@gmail.com" 
             className="social-card email"
             aria-label="Email"
           >

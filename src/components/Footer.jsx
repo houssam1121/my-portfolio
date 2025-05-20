@@ -48,7 +48,7 @@ function Footer() {
         </a>
       </div>
 
-      <p>&copy; {new Date().getFullYear()} Alex. All rights reserved.</p>
+      <p>&copy; {new Date().getFullYear()} Houssam. All rights reserved.</p>
 
       {showBackToTop && (
         <div className="back-to-top" onClick={scrollToTop}>
