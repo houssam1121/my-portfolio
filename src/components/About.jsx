@@ -36,7 +36,7 @@ function About() {
         options={{
           particles: {
             number: {
-              value: 30,
+              value: 200,
               density: {
                 enable: true,
                 value_area: 800,
@@ -46,7 +46,7 @@ function About() {
               value: "#4f46e5",
             },
             shape: {
-              type: "circle",
+             type: "polygon",
             },
             opacity: {
               value: 0.3,
@@ -58,7 +58,7 @@ function About() {
             },
             move: {
               enable: true,
-              speed: 1,
+              speed: 0.5,
               direction: "none",
               random: true,
               straight: false,
