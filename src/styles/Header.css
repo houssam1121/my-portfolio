@@ -76,7 +76,9 @@
 .nav-links li a:hover::after {
   width: 100%;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .container.nav {
