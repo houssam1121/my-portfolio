@@ -1,20 +1,8 @@
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaGitAlt,
-  FaJava,
-} from "react-icons/fa";
-import {
-  SiJavascript,
-  SiFlutter,
-  SiDart,
-  SiPython,
-} from "react-icons/si";
-
+import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaJava } from "react-icons/fa";
+import { SiJavascript, SiFlutter, SiDart, SiPython, SiLaravel, SiPhp, SiCplusplus } from "react-icons/si";
 import { MdPhoneIphone } from "react-icons/md";
 import profilePic from "../assets/profie.jpg";  // <-- Correct import here
 import "./../styles/About.css";
@@ -34,6 +22,9 @@ function About() {
     { name: "Dart", Icon: SiDart },
     { name: "Python", Icon: SiPython },
     { name: "Java", Icon: FaJava },
+    { name: "Laravel", Icon: SiLaravel },
+    { name: "PHP", Icon: SiPhp },
+    { name: "C++", Icon: SiCplusplus },
     { name: "Responsive Design", Icon: MdPhoneIphone },
   ];
 
@@ -84,35 +75,41 @@ function About() {
           },
         }}
       />
-     <div className="container">
-  <div className="about-content">
-    <div className="about-image">
-      <img src={profilePic} alt="Profile" />
-    </div>
-
-    <div className="about-text">
-      <h2>About Me</h2>
-      <p>
-        Focused and results-driven Software Developer specializing in cross-platform mobile app
-        development with <b style={{ color: "#2563eb" }}>Flutter</b>. Experienced in building responsive,
-        scalable UIs and applying modern UI/UX principles. Proficient in web technologies like HTML,
-        CSS, JavaScript, and Python, with hands-on experience from real-world projects. Passionate about
-        continuous learning, open-source, and crafting intuitive, high-quality digital solutions.
-      </p>
-
-      <div className="skills">
-        {skills.map((skill, index) => (
-          <div key={index} className="skill-item">
-            <span className="skill-icon">
-              <skill.Icon size={24} color="#4f46e5" />
-            </span>
-            <span className="skill-name">{skill.name}</span>
+      <div className="container">
+        <div className="about-content">
+          <div className="about-image">
+            <img src={profilePic} alt="Profile" />
           </div>
-        ))}
+
+          <div className="about-text">
+            <h2>About Me</h2>
+            <p
+             style={{
+    textAlign: "justify",
+    lineHeight: "1.8",
+    fontSize: "1.2rem",
+    marginBottom: "1rem",
+  }}>
+              Motivated Computer Science graduate with strong technical skills in mobile and web application development. I am
+              proficient in <b style={{ color: "#2563eb" }}>Flutter</b> for cross-platform mobile apps, React for modern front-end development, and Laravel for back
+              end services. Experienced in a variety of programming languages including Python, Java, C++, PHP, and JavaScript.
+              Passionate about building efficient, user-friendly applications and continuously learning new technologies to solve
+              real-world problems.
+            </p>
+
+            <div className="skills">
+              {skills.map((skill, index) => (
+                <div key={index} className="skill-item">
+                  <span className="skill-icon">
+                    <skill.Icon size={24} color="#4f46e5" />
+                  </span>
+                  <span className="skill-name">{skill.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
     </section>
   );

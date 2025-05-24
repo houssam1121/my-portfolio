@@ -20,7 +20,7 @@ function Projects() {
       demoUrl: "#",
       codeUrl: "#",
       icon: <FaBusAlt size={48} />,
-      gradient: "linear-gradient(135deg, #10b981, #059669)"
+     gradient: "linear-gradient(135deg, #4f46e5, #7c3aed)"
     },
     {
       title: "Responsive Dashboard App UI",
@@ -29,7 +29,7 @@ function Projects() {
       demoUrl: "#",
       codeUrl: "#",
       icon: <FaFlipboard size={48} />,
-      gradient: "linear-gradient(135deg, #f59e0b, #d97706)"
+      gradient: "linear-gradient(135deg, #4f46e5, #7c3aed)"
     },
     {
       title: "Portfolio Website",
@@ -38,7 +38,16 @@ function Projects() {
       demoUrl: "#",
       codeUrl: "#",
       icon: <FaLaptopCode size={48} />,
-      gradient: "linear-gradient(135deg, #ec4899, #db2777)"
+      gradient: "linear-gradient(135deg, #4f46e5, #7c3aed)"
+    },
+     {
+      title: "Task Manager App",
+      description: "A mobile task management system allowing users to organize tasks with real-time synchronization. ",
+      tags: ["Flutter", "Laravel", "PHP"],
+      demoUrl: "#",
+      codeUrl: "#",
+      icon: <FaLaptopCode size={48} />,
+      gradient: "linear-gradient(135deg, #4f46e5, #7c3aed)"
     }
   ];
 
